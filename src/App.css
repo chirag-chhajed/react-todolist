@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+header{
+    text-transform: capitalize;
+    background-color: crimson;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 1rem;
+}
+form input{
+    outline: none;
+    border: none;
+    padding: 10px 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+form button{
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    border-radius: 0 1rem 1rem 0;
+}
