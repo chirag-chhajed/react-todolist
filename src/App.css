@@ -21,14 +21,21 @@ form input{
     outline: none;
     border: none;
     padding: 10px 0.5rem;
-    border-radius: 1rem 0 0 1rem;
+    width: 300px;
 
 }
 form button{
     outline: none;
     border: none;
     padding-inline: 10px;
-    border-radius: 0 1rem 1rem 0;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+    background-color: #e3d5ca;
+}
+form button:hover{
+    color: white;
+    background-color: black;
 }
 .todolist{
     height: 28rem;
