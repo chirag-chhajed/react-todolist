@@ -35,6 +35,8 @@ form button{
     width: 22rem;
     margin-inline: auto;
     background-color: lavender;
+    overflow-y: scroll;
+    position: relative;
 }
 .todolist .head{
     height: 20%;
@@ -46,6 +48,9 @@ form button{
     font-size: 24px;
     padding: 1.5rem;
     font-weight: 800;
+    position: sticky;
+    top: 0;
+
     
 }
 
@@ -62,6 +67,8 @@ main{
     margin-inline: auto;
     margin-block: 2rem;
     background-color: lavender;
+    overflow-y: scroll;
+    position: relative;
 }
 .donelist .head{
     height: 20%;
@@ -73,6 +80,8 @@ main{
     font-size: 24px;
     padding: 1.5rem;
     font-weight: 800;
+    position: sticky;
+    top: 0;
 }
 ul{
     padding-inline:1rem;

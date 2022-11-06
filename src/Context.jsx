@@ -15,8 +15,21 @@ function ContextProvider({children}){
         setTodos(newTodos)
     }
 
+    const deleteTodo = id => {
+        setTodos(e => e.filter(todo => todo.id !== id))
+    }
+    const toggleMarkDone = id => {
+        const updatedTodos = todos.map(todo => {
+            if(todo.id===id){
+                return{...todo, isDone: !todo.isDone}
+            }
+            return todo
+        })
+        setTodos(updatedTodos)
+    }
+
     return(
-        <Context.Provider value={{todos,add}}>
+        <Context.Provider value={{todos,add,deleteTodo,toggleMarkDone}}>
             {children}
         </Context.Provider>
     )
