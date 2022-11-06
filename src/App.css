@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+}
 header{
     text-transform: capitalize;
     background-color: crimson;
@@ -19,7 +22,6 @@ form input{
     border: none;
     padding: 10px 0.5rem;
     border-radius: 1rem 0 0 1rem;
-    font-family: 'Poppins', sans-serif;
 
 }
 form button{
@@ -28,3 +30,66 @@ form button{
     padding-inline: 10px;
     border-radius: 0 1rem 1rem 0;
 }
+.todolist{
+    height: 28rem;
+    width: 22rem;
+    margin-inline: auto;
+    background-color: lavender;
+}
+.todolist .head{
+    height: 20%;
+    width: 100%;
+    background-color: crimson;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    padding: 1.5rem;
+    font-weight: 800;
+    
+}
+
+main{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+    word-wrap: break-word;
+}
+.donelist{
+    height: 28rem;
+    width: 22rem;
+    margin-inline: auto;
+    margin-block: 2rem;
+    background-color: lavender;
+}
+.donelist .head{
+    height: 20%;
+    width: 100%;
+    background-color: navy;
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    padding: 1.5rem;
+    font-weight: 800;
+}
+ul{
+    padding-inline:1rem;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.5rem;
+    background-color: cornsilk;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-block: 0.5rem;
+}
+li div{
+    display: flex;
+    gap: 0.3rem;
+}
+ 

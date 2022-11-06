@@ -1,7 +1,8 @@
 import React,{ useState } from 'react'
 import Header from './Components/Header'
 import Form from './Components/Form'
-import Todo from './Components/Todo'
+import TodoList from './Components/TodoList'
+import DoneList from './Components/DoneList'
 
 
 import './App.css'
@@ -14,7 +15,8 @@ function App() {
       <Header />
       <Form/>
       <main>
-        <Todo/>
+        <TodoList/>
+        <DoneList/>
       </main>
     </>
       

@@ -26,11 +26,11 @@ export default function Form(){
     
         
     }
-    const list = todo.map(e => (
-        <li key={e.id}>
-            {e.text}
-        </li>
-    )) 
+    // const list = todo.map(e => (
+    //     <li key={e.id}>
+    //         {e.text}
+    //     </li>
+    // )) 
     return(
         <>
         <form onSubmit={handleSubmit}>
@@ -42,9 +42,6 @@ export default function Form(){
             />
             <button><i class="ri-add-line ri-1.3x"></i></button>
         </form>
-        <ul>
-            {list}
-        </ul>
         </>
     )
 }
