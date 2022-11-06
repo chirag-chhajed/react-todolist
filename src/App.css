@@ -108,6 +108,28 @@ li div{
     display: flex;
     gap: 0.3rem;
 }
+.swap{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+.swap button{
+    margin-inline: auto;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: 2.5px solid black;
+    box-shadow: 0 6px black;
+    transition: box-shadow 0.2s linear;
+}
+.swap button:hover{
+    box-shadow: 0 4px black;
+}
+.swap button:active{
+    box-shadow: none;
+}
 
 @media screen and (min-width:768px) {
     main{
