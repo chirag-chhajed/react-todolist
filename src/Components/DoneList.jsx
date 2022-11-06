@@ -1,5 +1,4 @@
 import React from "react";
-import Todo from "./Todo";
 export default function DoneList(){
     return(
         <>
@@ -9,7 +8,6 @@ export default function DoneList(){
                 </div>
                 <div className="body">
                     <ul>
-                        <Todo/>
                     </ul>
                 </div>
             </div>
