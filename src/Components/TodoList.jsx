@@ -1,6 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
+import { Context } from "../Context";
+import Todo from "../Components/Todo"
 
 export default function TodoList(){
+    const {todos} = useContext(Context)
+    const TodoList = todos.filter(todo => todo.isDone === false).map(todo => (<Todo {...todo} />))
     
     return(
         <>
@@ -10,7 +14,7 @@ export default function TodoList(){
                 </div>
                 <div className="body">
                     <ul>
-
+                        {TodoList}
                     </ul>
                 </div>
             </div>
