@@ -4,8 +4,9 @@
 }
 header{
     text-transform: capitalize;
-    background-color: crimson;
-    height: 10vh;
+    background-color: #22223b;
+    color: #f2e9e4;
+    height: 15vh;
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -21,31 +22,44 @@ form input{
     outline: none;
     border: none;
     padding: 10px 0.5rem;
-    border-radius: 1rem 0 0 1rem;
+    width: 300px;
 
 }
 form button{
     outline: none;
     border: none;
     padding-inline: 10px;
-    border-radius: 0 1rem 1rem 0;
+    font-size: 24px;
+    font-weight: 800;
+    transition: all 0.3s ease-in;
+    background-color: #22223b;
+    color: #f2e9e4;
+}
+form button:hover{
+    color: #22223b;
+    background-color: #f2e9e4;
 }
 .todolist{
     height: 28rem;
     width: 22rem;
     margin-inline: auto;
-    background-color: lavender;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    position: relative;
 }
 .todolist .head{
     height: 20%;
     width: 100%;
-    background-color: crimson;
-    color: black;
+    background-color: #d62828;
+    color: #eae2b7;
     text-transform: capitalize;
     text-align: center;
     font-size: 24px;
     padding: 1.5rem;
     font-weight: 800;
+    position: sticky;
+    top: 0;
+
     
 }
 
@@ -61,18 +75,22 @@ main{
     width: 22rem;
     margin-inline: auto;
     margin-block: 2rem;
-    background-color: lavender;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    position: relative;
 }
 .donelist .head{
     height: 20%;
     width: 100%;
-    background-color: navy;
-    color: black;
+    background-color: #1b263b;
+    color: #e0d1bb;
     text-transform: capitalize;
     text-align: center;
     font-size: 24px;
     padding: 1.5rem;
     font-weight: 800;
+    position: sticky;
+    top: 0;
 }
 ul{
     padding-inline:1rem;
@@ -91,6 +109,28 @@ li{
 li div{
     display: flex;
     gap: 0.3rem;
+}
+.swap{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+.swap button{
+    margin-inline: auto;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: 2.5px solid black;
+    box-shadow: 0 6px black;
+    transition: box-shadow 0.2s linear;
+}
+.swap button:hover{
+    box-shadow: 0 4px black;
+}
+.swap button:active{
+    box-shadow: none;
 }
 
 @media screen and (min-width:768px) {
