@@ -2,7 +2,7 @@ import React,{useState,useContext} from "react";
 import { Context } from "../Context";
 
 export default function Form(){
-    const {todos,add} = useContext(Context)
+    const {add} = useContext(Context)
     const [value,setValue] = useState("")
 
     const handleSubmit = event => {
