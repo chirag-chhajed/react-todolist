@@ -4,13 +4,15 @@ import React, { createContext, useState, useEffect } from "react";
 const Context = createContext()
 
 function ContextProvider({ children }) {
-    const [todos, setTodos] = useState(
-        () => JSON.parse(localStorage.getItem("todos"))
-    )
+    const [todos, setTodos] = useState([{
+        text: "This is a Sample todo",
+        id: nanoid(),
+        isDone: false
+    }])
 
-    useEffect(() => {
-        localStorage.setItem("todos", JSON.stringify(todos))
-    }, [todos])
+    // useEffect(() => {
+    //     localStorage.setItem("todos", JSON.stringify(todos))
+    // }, [todos])
 
     const add = text => {
         const newTodos = [...todos, { text: text, id: nanoid(), isDone: false }]
