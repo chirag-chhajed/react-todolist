@@ -5,9 +5,9 @@ const Context = createContext()
 
 function ContextProvider({children}){
     const [todos,setTodos] = useState([{
-        text: "This is a sample todo",
+        text: "Making the Todo App",
         id: nanoid(),
-        isDone: false
+        isDone: true
     }])
 
     const add = text => {
