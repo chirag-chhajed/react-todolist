@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    font-family: 'poppins',sans-serif;
+
+* {
+    font-family: 'poppins', sans-serif;
 }
-header{
+
+header {
     text-transform: capitalize;
     background-color: #22223b;
     color: #f2e9e4;
@@ -12,34 +14,37 @@ header{
     padding-left: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     gap: 0;
     margin-top: 1rem;
 }
-form input{
+
+form input {
     outline: none;
     border: none;
     padding: 10px 0.5rem;
     width: 300px;
 
 }
-form button{
+
+form button {
     outline: none;
     border: none;
     padding-inline: 10px;
     font-size: 24px;
     font-weight: 800;
-    transition: all 0.3s ease-in;
     background-color: #22223b;
     color: #f2e9e4;
 }
-form button:hover{
-    color: #22223b;
-    background-color: #f2e9e4;
+
+form button:hover {
+    cursor: pointer;
 }
-.todolist{
+
+.todolist {
     height: 28rem;
     width: 22rem;
     margin-inline: auto;
@@ -47,7 +52,8 @@ form button:hover{
     overflow-y: scroll;
     position: relative;
 }
-.todolist .head{
+
+.todolist .head {
     height: 20%;
     width: 100%;
     background-color: #d62828;
@@ -59,18 +65,17 @@ form button:hover{
     font-weight: 800;
     position: sticky;
     top: 0;
-
-    
 }
 
-main{
-    margin-bottom: 1rem;
+main {
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     margin-block: 2rem;
     word-wrap: break-word;
 }
-.donelist{
+
+.donelist {
     height: 28rem;
     width: 22rem;
     margin-inline: auto;
@@ -79,7 +84,8 @@ main{
     overflow-y: scroll;
     position: relative;
 }
-.donelist .head{
+
+.donelist .head {
     height: 20%;
     width: 100%;
     background-color: #1b263b;
@@ -92,10 +98,12 @@ main{
     position: sticky;
     top: 0;
 }
-ul{
-    padding-inline:1rem;
+
+ul {
+    padding-inline: 1rem;
 }
-li{
+
+li {
     display: flex;
     justify-content: space-between;
     margin-inline: auto;
@@ -106,16 +114,19 @@ li{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-block: 0.5rem;
 }
-li div{
+
+li div {
     display: flex;
     gap: 0.3rem;
 }
-.swap{
+
+.swap {
     width: 100%;
     display: flex;
     margin-top: 1rem;
 }
-.swap button{
+
+.swap button {
     margin-inline: auto;
     padding: 0.5rem 2rem;
     border: none;
@@ -126,20 +137,22 @@ li div{
     box-shadow: 0 6px black;
     transition: box-shadow 0.2s linear;
 }
-.swap button:hover{
+
+.swap button:hover {
     box-shadow: 0 4px black;
 }
-.swap button:active{
+
+.swap button:active {
     box-shadow: none;
 }
 
 @media screen and (min-width:768px) {
-    main{
+    main {
         flex-direction: row;
         justify-content: space-around;
     }
-    .donelist{
+
+    .donelist {
         margin-block: 0;
     }
 }
- 

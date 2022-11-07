@@ -26,12 +26,12 @@ export default function Todo({ text, id }) {
             >
                 {text}
                 <div>
-                    <i class={deleteIcon} onClick={()=>deleteTodo(id)}></i>
-                    <i class={checkIcon} onClick={() => toggleMarkDone(id)}></i>
+                    <i className={deleteIcon} onClick={() => deleteTodo(id)}></i>
+                    <i className={checkIcon} onClick={() => toggleMarkDone(id)}></i>
                 </div>
-                
+
             </li>
-            <ToastContainer/>
+            <ToastContainer />
         </>
     )
 }

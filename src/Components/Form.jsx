@@ -14,7 +14,7 @@ export default function Form(){
         add(value)
         
     }
-    console.log(todos)
+    
     return(
         <>
         <form onSubmit={handleSubmit}>
